@@ -61,6 +61,7 @@ body{
 }
 
 .content{
+        color: #002057;
         display: flex;
         position: relative;
         top: 150px;
@@ -70,7 +71,7 @@ body{
 }
 
 .content span{
-    color: orange;
+    color: #ff7b00;
 }
 
 .content section{
@@ -97,10 +98,21 @@ body{
     padding: 10px 30px;
     color: white;
     border: none;
+    box-shadow: 0px 1px 5px 0px #3f37c9;
     font-size: 15px;
 }
 
 .content a{
     text-decoration: none;
+    color: #751A17;;
     
 }
+
+.content img{
+        background-color: #002057;
+        border-radius: 500px;
+        margin-left: 250px;
+        width: 400px;
+    
+}
+
