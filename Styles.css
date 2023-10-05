@@ -8,12 +8,14 @@
 
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
   min-height: 100%;
   background-color:whitesmoke ;
   display: flex;
+  flex-direction: column;
   
 }
 
@@ -66,6 +68,7 @@ body {
 }
 
 .content{
+    width: 100%;
     
 }
 .content .homepage{
@@ -96,7 +99,6 @@ body {
 .homepage h1{
     font-size: 50px;
     font-weight: bold;
-    text-align: left;
     
 }   
 
@@ -173,14 +175,30 @@ body {
 }
 
 .About{
+    color: #002057;
     display: flex;
     position: absolute;
     background-color: lightblue;
-    padding-top: 180px;
     border: 3px solid #73AD21;
     width: 100%;
     justify-content: space-evenly;
     height: 550px;
-    margin-top: 735px;
+    top: 730px;
+
+}
+.About img{
+    position:relative;
+    display: flex;
+    background-color: #002057;
+    border-radius: 50px;
+    width: 50%;
+   
+}
+
+.About p{
+    padding: 200px;
+    width: 50%;
+    font-family: inherit;
+    font-size: 20px;
 
 }
