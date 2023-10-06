@@ -10,47 +10,81 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body> 
-    <header class="header"> 
-        <a href="#Home" class="logo">Andree</a>
-            <nav class="navbar">
-                <a href="#Home" class="active" id="Home">Home</a>
-                <a href="#about">About</a>  
-                <a href="#">Contact</a>
-                <a href="#">Education</a>
-                <a href="#">Skills</a>
-            </nav>
-    </header>
-        <div class="content"> 
-            <div>
-                <section class="homepage">
-                    <div>
-                        <h1>Hi There,
-                            <br> I'm Andree <span>Arpon</span></h1>
-                            <p>Intern in <a href="https://www.facebook.com/emberspecmedia">Emberspec Media Solution Inc.</a></p>
-                        <button class="btn">About me<li class="material-symbols-outlined"> arrow_downward</li></button>
-                        <div class="icon">
-                            <a href="https://www.facebook.com/andree.arpon/"><i class='bx bxl-facebook-circle'></i></a>
-                            <a href="https://github.com/DreyArps"><i class='bx bxl-github'></i></a>
-                            <a href="https://twitter.com/andreearpon384"><i class='bx bxl-twitter' ></i></a>
-                        </div>
-                    </div>   
-                        <div class="picture">
-                            <img src="/images/andreearps.png" alt="Andree Arps">
+    <body> 
+        <div>
+        <header class="header"> 
+            <a href="#home" class="logo">Andree</a>
+                <nav class="navbar">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#about">About</a>  
+                    <a href="#Education">Education</a>
+                    <a href="#Contact">Contact</a>
+                </nav>
+        </header>
+            <div class="content"> 
+                <div>
+                    <section class="homepage" id="home">
+                        <div>
+                            <h1>Hi There,
+                                <br> I'm Andree <span>Arpon</span></h1>
+                                <p>Intern in <a href="https://www.facebook.com/emberspecmedia">Emberspec Media Solution Inc.</a></p>
+                            <button class="btn"  onclick="scrollToAbout('about')">About me<li class="material-symbols-outlined"> arrow_downward</li></button>
+                            <div class="icon">
+                                <a href="https://www.facebook.com/andree.arpon/"><i class='bx bxl-facebook-circle'></i></a>
+                                <a href="https://github.com/DreyArps"><i class='bx bxl-github'></i></a>
+                                <a href="https://twitter.com/andreearpon384"><i class='bx bxl-twitter' ></i></a>
+                            </div>
                         </div>   
-                    </div>
-                </section>
-            </div>
-            <div>
-                <section class="About">
-                    <div>
-                        <img src="/images/arps.jpg" alt="emo">
-                    </div>
-                    <div>
-                        <p> I'm passionately exploring the tech world. Guided by mentors, I code, collaborate, and solve real-world challenges. Every line of code is a step towards a promising IT career, where innovation and learning drive my journey.</p>
-                    </div>
-                </section>
-            </div>
-        </div>    
+                            <div class="picture">
+                                <img src="/images/andreearps.png" alt="Andree Arps">
+                            </div>   
+                        </div>
+                    </section>
+                </div>
+                <div>
+                    <section class="About" id="about">
+                        <div>
+                            <div class="Abtimg">
+                                <img src="/images/arps.jpg" alt="emo">
+                            </div>
+                        </div>
+                        <div class="describe">
+                            <h1>ABOUT ME</h1>
+                            <p> I'm passionately exploring the tech world. Guided by mentors, I code, collaborate, and solve real-world challenges. Every line of code is a step towards a promising IT career, where innovation and learning drive my journey.</p>
+                        </div>
+                    </section>
+                </div>
+                <div>
+                    <section class="Education" id="Education">
+                        <div>
+                            <div class="edu">
+                                <img src="/images/Logoxu.png" alt="skul">
+                            </div>
+                        </div>
+                        <div class="EduDes">
+                            <h1>Education</h1>
+                            <p>Bachelor of Science Major in Information Technology</p>
+                        </div>
+                    </section>
+                </div>
+            </div>   
+        </div>  
+        <div>
+            <section class="Contact" id="Contact">
+                <div class="EduDes">
+                    <h1>Education</h1>
+                    <p>Bachelor of Science Major in Information Technology</p>
+                </div>
+            </section>
+        </div>
+    </div>   
+</div>  
+        <script>
+            function scrollToAbout() {
+                document.getElementById('about').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        </script>
     </body>
 </html>
